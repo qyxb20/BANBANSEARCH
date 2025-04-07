@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E20BDD62DB94265D8438484 /* libPods-BANBANSEARCH.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3582DB707B3177D76FF950B4 /* libPods-BANBANSEARCH.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		189E8F2E2DA35BD800D756EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189E8F0A2DA35BD200D756EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 189E8F112DA35BD200D756EB;
+			remoteInfo = BANBANSEARCH;
+		};
+		189E8F382DA35BD800D756EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189E8F0A2DA35BD200D756EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 189E8F112DA35BD200D756EB;
+			remoteInfo = BANBANSEARCH;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		189E8F122DA35BD200D756EB /* BANBANSEARCH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BANBANSEARCH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		189E8F2D2DA35BD800D756EB /* BANBANSEARCHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BANBANSEARCHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		189E8F372DA35BD800D756EB /* BANBANSEARCHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BANBANSEARCHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3582DB707B3177D76FF950B4 /* libPods-BANBANSEARCH.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BANBANSEARCH.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		396CF7CB79891CD16A2B64CD /* Pods-BANBANSEARCH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BANBANSEARCH.debug.xcconfig"; path = "Target Support Files/Pods-BANBANSEARCH/Pods-BANBANSEARCH.debug.xcconfig"; sourceTree = "<group>"; };
+		D433D0693107A90322C00200 /* Pods-BANBANSEARCH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BANBANSEARCH.release.xcconfig"; path = "Target Support Files/Pods-BANBANSEARCH/Pods-BANBANSEARCH.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		189E8F3F2DA35BD800D756EB /* Exceptions for "BANBANSEARCH" folder in "BANBANSEARCH" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 189E8F112DA35BD200D756EB /* BANBANSEARCH */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		189E8F142DA35BD200D756EB /* BANBANSEARCH */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				189E8F3F2DA35BD800D756EB /* Exceptions for "BANBANSEARCH" folder in "BANBANSEARCH" target */,
+			);
+			path = BANBANSEARCH;
+			sourceTree = "<group>";
+		};
+		189E8F302DA35BD800D756EB /* BANBANSEARCHTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = BANBANSEARCHTests;
+			sourceTree = "<group>";
+		};
+		189E8F3A2DA35BD800D756EB /* BANBANSEARCHUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = BANBANSEARCHUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		189E8F0F2DA35BD200D756EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E20BDD62DB94265D8438484 /* libPods-BANBANSEARCH.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189E8F2A2DA35BD800D756EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189E8F342DA35BD800D756EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		189E8F092DA35BD200D756EB = {
+			isa = PBXGroup;
+			children = (
+				189E8F142DA35BD200D756EB /* BANBANSEARCH */,
+				189E8F302DA35BD800D756EB /* BANBANSEARCHTests */,
+				189E8F3A2DA35BD800D756EB /* BANBANSEARCHUITests */,
+				189E8F132DA35BD200D756EB /* Products */,
+				553C0C9CEA0EF7EB19F5556D /* Pods */,
+				71EB9177360E48E5461D71F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		189E8F132DA35BD200D756EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189E8F122DA35BD200D756EB /* BANBANSEARCH.app */,
+				189E8F2D2DA35BD800D756EB /* BANBANSEARCHTests.xctest */,
+				189E8F372DA35BD800D756EB /* BANBANSEARCHUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		553C0C9CEA0EF7EB19F5556D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				396CF7CB79891CD16A2B64CD /* Pods-BANBANSEARCH.debug.xcconfig */,
+				D433D0693107A90322C00200 /* Pods-BANBANSEARCH.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		71EB9177360E48E5461D71F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3582DB707B3177D76FF950B4 /* libPods-BANBANSEARCH.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		189E8F112DA35BD200D756EB /* BANBANSEARCH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189E8F402DA35BD800D756EB /* Build configuration list for PBXNativeTarget "BANBANSEARCH" */;
+			buildPhases = (
+				6B7A18F47CC4BBCD13E4C25E /* [CP] Check Pods Manifest.lock */,
+				189E8F0E2DA35BD200D756EB /* Sources */,
+				189E8F0F2DA35BD200D756EB /* Frameworks */,
+				189E8F102DA35BD200D756EB /* Resources */,
+				E89CF2F9080102C47AD2BB84 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				189E8F142DA35BD200D756EB /* BANBANSEARCH */,
+			);
+			name = BANBANSEARCH;
+			productName = BANBANSEARCH;
+			productReference = 189E8F122DA35BD200D756EB /* BANBANSEARCH.app */;
+			productType = "com.apple.product-type.application";
+		};
+		189E8F2C2DA35BD800D756EB /* BANBANSEARCHTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189E8F452DA35BD800D756EB /* Build configuration list for PBXNativeTarget "BANBANSEARCHTests" */;
+			buildPhases = (
+				189E8F292DA35BD800D756EB /* Sources */,
+				189E8F2A2DA35BD800D756EB /* Frameworks */,
+				189E8F2B2DA35BD800D756EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				189E8F2F2DA35BD800D756EB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				189E8F302DA35BD800D756EB /* BANBANSEARCHTests */,
+			);
+			name = BANBANSEARCHTests;
+			productName = BANBANSEARCHTests;
+			productReference = 189E8F2D2DA35BD800D756EB /* BANBANSEARCHTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		189E8F362DA35BD800D756EB /* BANBANSEARCHUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189E8F482DA35BD800D756EB /* Build configuration list for PBXNativeTarget "BANBANSEARCHUITests" */;
+			buildPhases = (
+				189E8F332DA35BD800D756EB /* Sources */,
+				189E8F342DA35BD800D756EB /* Frameworks */,
+				189E8F352DA35BD800D756EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				189E8F392DA35BD800D756EB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				189E8F3A2DA35BD800D756EB /* BANBANSEARCHUITests */,
+			);
+			name = BANBANSEARCHUITests;
+			productName = BANBANSEARCHUITests;
+			productReference = 189E8F372DA35BD800D756EB /* BANBANSEARCHUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		189E8F0A2DA35BD200D756EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					189E8F112DA35BD200D756EB = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					189E8F2C2DA35BD800D756EB = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 189E8F112DA35BD200D756EB;
+					};
+					189E8F362DA35BD800D756EB = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 189E8F112DA35BD200D756EB;
+					};
+				};
+			};
+			buildConfigurationList = 189E8F0D2DA35BD200D756EB /* Build configuration list for PBXProject "BANBANSEARCH" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 189E8F092DA35BD200D756EB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 189E8F132DA35BD200D756EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				189E8F112DA35BD200D756EB /* BANBANSEARCH */,
+				189E8F2C2DA35BD800D756EB /* BANBANSEARCHTests */,
+				189E8F362DA35BD800D756EB /* BANBANSEARCHUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		189E8F102DA35BD200D756EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189E8F2B2DA35BD800D756EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189E8F352DA35BD800D756EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B7A18F47CC4BBCD13E4C25E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BANBANSEARCH-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E89CF2F9080102C47AD2BB84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BANBANSEARCH/Pods-BANBANSEARCH-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BANBANSEARCH/Pods-BANBANSEARCH-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BANBANSEARCH/Pods-BANBANSEARCH-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		189E8F0E2DA35BD200D756EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189E8F292DA35BD800D756EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189E8F332DA35BD800D756EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		189E8F2F2DA35BD800D756EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 189E8F112DA35BD200D756EB /* BANBANSEARCH */;
+			targetProxy = 189E8F2E2DA35BD800D756EB /* PBXContainerItemProxy */;
+		};
+		189E8F392DA35BD800D756EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 189E8F112DA35BD200D756EB /* BANBANSEARCH */;
+			targetProxy = 189E8F382DA35BD800D756EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		189E8F412DA35BD800D756EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 396CF7CB79891CD16A2B64CD /* Pods-BANBANSEARCH.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BANBANSEARCH/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "BANBAN SEARCH";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BANBANSEARCH.cn.BANBANSEARCH;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		189E8F422DA35BD800D756EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D433D0693107A90322C00200 /* Pods-BANBANSEARCH.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BANBANSEARCH/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "BANBAN SEARCH";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BANBANSEARCH.cn.BANBANSEARCH;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		189E8F432DA35BD800D756EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		189E8F442DA35BD800D756EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		189E8F462DA35BD800D756EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BANBANSEARCH.cn.BANBANSEARCHTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BANBANSEARCH.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BANBANSEARCH";
+			};
+			name = Debug;
+		};
+		189E8F472DA35BD800D756EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BANBANSEARCH.cn.BANBANSEARCHTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BANBANSEARCH.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BANBANSEARCH";
+			};
+			name = Release;
+		};
+		189E8F492DA35BD800D756EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BANBANSEARCH.cn.BANBANSEARCHUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BANBANSEARCH;
+			};
+			name = Debug;
+		};
+		189E8F4A2DA35BD800D756EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BANBANSEARCH.cn.BANBANSEARCHUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BANBANSEARCH;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		189E8F0D2DA35BD200D756EB /* Build configuration list for PBXProject "BANBANSEARCH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189E8F432DA35BD800D756EB /* Debug */,
+				189E8F442DA35BD800D756EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189E8F402DA35BD800D756EB /* Build configuration list for PBXNativeTarget "BANBANSEARCH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189E8F412DA35BD800D756EB /* Debug */,
+				189E8F422DA35BD800D756EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189E8F452DA35BD800D756EB /* Build configuration list for PBXNativeTarget "BANBANSEARCHTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189E8F462DA35BD800D756EB /* Debug */,
+				189E8F472DA35BD800D756EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189E8F482DA35BD800D756EB /* Build configuration list for PBXNativeTarget "BANBANSEARCHUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189E8F492DA35BD800D756EB /* Debug */,
+				189E8F4A2DA35BD800D756EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 189E8F0A2DA35BD200D756EB /* Project object */;
+}

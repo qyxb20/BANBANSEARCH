@@ -1,0 +1,8 @@
+
+target 'BANBANSEARCH' do
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'MJRefresh'
+pod 'MJExtension'
+
+end
