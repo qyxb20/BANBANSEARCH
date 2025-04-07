@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-BANBANSEARCH/Pods-BANBANSEARCH-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/MJExtension/MJExtension.bundle
+${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.Privacy.bundle
