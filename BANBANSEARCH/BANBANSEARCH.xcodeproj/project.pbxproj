@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A2C0222DACC627005E6639 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A2C0212DACC627005E6639 /* StoreKit.framework */; };
 		3E20BDD62DB94265D8438484 /* libPods-BANBANSEARCH.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3582DB707B3177D76FF950B4 /* libPods-BANBANSEARCH.a */; };
 /* End PBXBuildFile section */
 
@@ -28,9 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181BA1DF2DC9F90400DDA5BC /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		189E8F122DA35BD200D756EB /* BANBANSEARCH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BANBANSEARCH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189E8F2D2DA35BD800D756EB /* BANBANSEARCHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BANBANSEARCHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189E8F372DA35BD800D756EB /* BANBANSEARCHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BANBANSEARCHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A2C0212DACC627005E6639 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3582DB707B3177D76FF950B4 /* libPods-BANBANSEARCH.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BANBANSEARCH.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		396CF7CB79891CD16A2B64CD /* Pods-BANBANSEARCH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BANBANSEARCH.debug.xcconfig"; path = "Target Support Files/Pods-BANBANSEARCH/Pods-BANBANSEARCH.debug.xcconfig"; sourceTree = "<group>"; };
 		D433D0693107A90322C00200 /* Pods-BANBANSEARCH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BANBANSEARCH.release.xcconfig"; path = "Target Support Files/Pods-BANBANSEARCH/Pods-BANBANSEARCH.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,15 +60,11 @@
 		};
 		189E8F302DA35BD800D756EB /* BANBANSEARCHTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = BANBANSEARCHTests;
 			sourceTree = "<group>";
 		};
 		189E8F3A2DA35BD800D756EB /* BANBANSEARCHUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = BANBANSEARCHUITests;
 			sourceTree = "<group>";
 		};
@@ -76,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A2C0222DACC627005E6639 /* StoreKit.framework in Frameworks */,
 				3E20BDD62DB94265D8438484 /* libPods-BANBANSEARCH.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,13 +125,14 @@
 				396CF7CB79891CD16A2B64CD /* Pods-BANBANSEARCH.debug.xcconfig */,
 				D433D0693107A90322C00200 /* Pods-BANBANSEARCH.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		71EB9177360E48E5461D71F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				181BA1DF2DC9F90400DDA5BC /* GoogleMapsBase.framework */,
+				18A2C0212DACC627005E6639 /* StoreKit.framework */,
 				3582DB707B3177D76FF950B4 /* libPods-BANBANSEARCH.a */,
 			);
 			name = Frameworks;
@@ -148,7 +149,7 @@
 				189E8F0E2DA35BD200D756EB /* Sources */,
 				189E8F0F2DA35BD200D756EB /* Frameworks */,
 				189E8F102DA35BD200D756EB /* Resources */,
-				E89CF2F9080102C47AD2BB84 /* [CP] Copy Pods Resources */,
+				DBBF953531EE474D01B05A35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,7 +295,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E89CF2F9080102C47AD2BB84 /* [CP] Copy Pods Resources */ = {
+		DBBF953531EE474D01B05A35 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,21 +359,34 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.3;
+				DEVELOPMENT_TEAM = MR7PRB2YBH;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Base/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BANBANSEARCH/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BANBANSEARCH/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "BANBAN SEARCH";
+				INFOPLIST_KEY_CFBundleDisplayName = "BANBANサーチ";
+				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリは、カメラへのアクセスを要求しています。アクセスを許可すると、撮影した写真を簡単にアップロードできます。";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "位置情報のアクセスを許可すると、あなたに近い店舗や会場の情報を表示できます。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報のアクセスを許可すると、あなたに近い店舗や会場の情報を表示できます。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "このアプリは、写真へのアクセスを要求しています。アクセスを許可すると、写真を簡単にアップロードできます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = BANBANSEARCH.cn.BANBANSEARCH;
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.BANBANSEARCH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -390,21 +404,34 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.3;
+				DEVELOPMENT_TEAM = MR7PRB2YBH;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Base/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BANBANSEARCH/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BANBANSEARCH/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "BANBAN SEARCH";
+				INFOPLIST_KEY_CFBundleDisplayName = "BANBANサーチ";
+				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリは、カメラへのアクセスを要求しています。アクセスを許可すると、撮影した写真を簡単にアップロードできます。";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "位置情報のアクセスを許可すると、あなたに近い店舗や会場の情報を表示できます。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報のアクセスを許可すると、あなたに近い店舗や会場の情報を表示できます。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "このアプリは、写真へのアクセスを要求しています。アクセスを許可すると、写真を簡単にアップロードできます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = BANBANSEARCH.cn.BANBANSEARCH;
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.BANBANSEARCH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

@@ -1,4 +1,10 @@
 ${PODS_ROOT}/Target Support Files/Pods-BANBANSEARCH/Pods-BANBANSEARCH-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/BRPickerView/BRPickerView.Privacy.bundle
+${PODS_ROOT}/BRPickerView/BRPickerView/Core/BRPickerView.bundle
+${PODS_ROOT}/BRPickerView/BRPickerView/Deprecated/AddressPickerView/BRAddressPickerView.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/GoogleMaps/GoogleMapsResources.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager/IQKeyboardManager.bundle
 ${PODS_CONFIGURATION_BUILD_DIR}/MJExtension/MJExtension.bundle
-${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.Privacy.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle
+${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle
+${PODS_ROOT}/ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle

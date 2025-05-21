@@ -97,14 +97,26 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/BRPickerView/BRPickerView.Privacy.bundle"
+  install_resource "${PODS_ROOT}/BRPickerView/BRPickerView/Core/BRPickerView.bundle"
+  install_resource "${PODS_ROOT}/BRPickerView/BRPickerView/Deprecated/AddressPickerView/BRAddressPickerView.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/GoogleMaps/GoogleMapsResources.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager/IQKeyboardManager.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/MJExtension/MJExtension.bundle"
-  install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.Privacy.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle"
+  install_resource "${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle"
+  install_resource "${PODS_ROOT}/ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/BRPickerView/BRPickerView.Privacy.bundle"
+  install_resource "${PODS_ROOT}/BRPickerView/BRPickerView/Core/BRPickerView.bundle"
+  install_resource "${PODS_ROOT}/BRPickerView/BRPickerView/Deprecated/AddressPickerView/BRAddressPickerView.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/GoogleMaps/GoogleMapsResources.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager/IQKeyboardManager.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/MJExtension/MJExtension.bundle"
-  install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.Privacy.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle"
+  install_resource "${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle"
+  install_resource "${PODS_ROOT}/ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-
+@property(nonatomic, nullable) id servicesHandle;
+@property (nonatomic, strong) UIWindow *window;
 @end
 

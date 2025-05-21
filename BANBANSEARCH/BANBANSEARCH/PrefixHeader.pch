@@ -1,0 +1,114 @@
+//
+//  PrefixHeader.pch
+//  BANBANSEARCH
+//
+//  Created by apple on 2025/4/15.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define RGB(c) [UIColor colorWithRed:((float)((c & 0xFF0000) >> 16))/255.0f green:((float)((c & 0xFF00) >> 8))/255.0f blue:((float)(c & 0xFF))/255.0f alpha:1.0]
+#define WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define ExecBlock(block, ...) if (block) { block(__VA_ARGS__); };
+#define weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+#define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+#define RGB_ALPHA(c, a) [UIColor colorWithRed:((float)((c & 0xFF0000) >> 16))/255.0f green:((float)((c & 0xFF00) >> 8))/255.0f blue:((float)(c & 0xFF))/255.0f alpha:a]
+#define APPDELEGATE [UIApplication sharedApplication].delegate
+//#define PHONESTR @"^0[1-9][0-9]?-[0-9]{4}-[0-9]{4}$"
+//#define PHONESTR1 @"^(0120|0570|0180)-\\d{3}-\\d{3}$"
+//#define PHONESTR2 @"^(050|060)-\\d{4}-\\d{4}$"
+//#define PHONESTR3 @"^0\\d{1,4}-\\d{1,4}-\\d{4}$"
+#define PHONESTR @"^0\\d{3}-\\d{2}-\\d{4}$"
+#define PHONESTR1 @"^0\\d{4}-\\d{1}-\\d{3}$"
+#define PHONESTR2 @"^0\\d{2}-\\d{4}-\\d{4}$"
+#define PHONESTR3 @"^0\\d{3}-\\d{3}-\\d{3}$"
+#define PHONESTR4 @"^0\\d{2}-\\d{3}-\\d{4}$"
+#define PHONESTR5 @"^0\\d{1}-\\d{4}-\\d{4}$"
+
+
+#define EMAILSTR @"^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+
+#import <AFNetworking/AFNetworking.h>
+#import <MJExtension/MJExtension.h>
+#import <Masonry/Masonry.h>
+#import <SDWebImage/SDWebImage.h>
+#import <MBProgressHUD.h>
+#import <ReactiveObjC.h>
+#import <GoogleMaps/GoogleMaps.h>
+#import <BRPickerView.h>
+#import <UIKit/UIKit.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <TZImagePickerController/TZImagePickerController.h>
+#import <StoreKit/StoreKit.h>
+#import <IQKeyboardManager.h>
+
+
+#import "UIButton+tool.h"
+#import "UIView+tool.h"
+#import "UIBezierPath+tool.h"
+#import "NSString+tool.h"
+#import "UITextView+tool.h"
+#import "CALayer+tool.h"
+#import "UIViewController+MMDrawerController.h"
+#import "MBProgressHUD+JH.h"
+#import "UIViewController+tool.h"
+#import "UIImage+Tint.h"
+#import "NSDate+ZLDateTimeStr.h"
+
+#import "AccountTool.h"
+#import "SaveManager.h"
+#import "BaseModel.h"
+#import "UserInfoModel.h"
+#import "Tost.h"
+#import "Tool.h"
+#import "NothingView.h"
+#import "PopoverSelector.h"
+#import "TimeRangePicker.h"
+#import "CustomView.h"
+#import "CustomLineView.h"
+#import "CSQAlertView.h"
+#import "appPayView.h"
+#import "NetwortTool.h"
+#import "NetWorkCommon.h"
+#import "NetWorkRequest.h"
+#import "ShopDetailView.h"
+#import "SearchHistoryView.h"
+#import "HistoryView.h"
+#import "AddressSelModel.h"
+#import "AddressSelView.h"
+#import "HudView.h"
+#import "UploadElement.h"
+#import "addressModel.h"
+#import "huiSelView.h"
+#import "venuesView.h"
+#import "MarkCustormView.h"
+#import "shopInforView.h"
+
+#import "ShopManagerViewController.h"
+#import "ViewController.h"
+#import "SettingViewController.h"
+#import "LoginViewController.h"
+#import "CustomizedNavigationController.h"
+#import "ResignViewController.h"
+#import "CustomTextViewViewController.h"
+#import "ZYQAssetPickerController.h"
+#import "OpenVipViewController.h"
+#import "CancelViewController.h"
+#import "CancelDetailViewController.h"
+#import "CancelReasonViewController.h"
+#import "shopDelViewController.h"
+#import "MineWebKitViewController.h"
+
+#import "AddCollectionViewCell.h"
+#import "CollectionViewCell.h"
+#import "SettingTableViewCell.h"
+#import "ShopManagerTableViewCell.h"
+#import "SearchHistoryViewTableViewCell.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

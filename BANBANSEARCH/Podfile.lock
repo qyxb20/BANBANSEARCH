@@ -14,29 +14,94 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - BRPickerView (2.9.5):
+    - BRPickerView/All (= 2.9.5)
+  - BRPickerView/All (2.9.5):
+    - BRPickerView/Default
+    - BRPickerView/Deprecated
+  - BRPickerView/Core (2.9.5)
+  - BRPickerView/DatePicker (2.9.5):
+    - BRPickerView/Core
+  - BRPickerView/Default (2.9.5):
+    - BRPickerView/DatePicker
+    - BRPickerView/TextPicker
+  - BRPickerView/Deprecated (2.9.5):
+    - BRPickerView/Core
+    - BRPickerView/Deprecated/AddressPickerView (= 2.9.5)
+    - BRPickerView/Deprecated/Base (= 2.9.5)
+    - BRPickerView/Deprecated/StringPickerView (= 2.9.5)
+  - BRPickerView/Deprecated/AddressPickerView (2.9.5):
+    - BRPickerView/Core
+    - BRPickerView/Deprecated/Base
+  - BRPickerView/Deprecated/Base (2.9.5):
+    - BRPickerView/Core
+  - BRPickerView/Deprecated/StringPickerView (2.9.5):
+    - BRPickerView/Core
+    - BRPickerView/Deprecated/Base
+  - BRPickerView/TextPicker (2.9.5):
+    - BRPickerView/Core
+  - GoogleMaps (9.4.0):
+    - GoogleMaps/Maps (= 9.4.0)
+  - GoogleMaps/Maps (9.4.0)
+  - IQKeyboardManager (6.5.19)
+  - JZLocationConverter (1.0.0)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
   - MJExtension (3.4.2)
-  - MJRefresh (3.7.9)
+  - ReactiveObjC (3.1.1)
+  - SDWebImage (5.21.0):
+    - SDWebImage/Core (= 5.21.0)
+  - SDWebImage/Core (5.21.0)
+  - TZImagePickerController (3.8.8):
+    - TZImagePickerController/Basic (= 3.8.8)
+    - TZImagePickerController/Location (= 3.8.8)
+  - TZImagePickerController/Basic (3.8.8)
+  - TZImagePickerController/Location (3.8.8)
+  - ZYQAssetPickerController (1.3.1)
 
 DEPENDENCIES:
   - AFNetworking
+  - BRPickerView
+  - GoogleMaps (~> 9.4.0)
+  - IQKeyboardManager
+  - JZLocationConverter
   - Masonry
+  - MBProgressHUD
   - MJExtension
-  - MJRefresh
+  - ReactiveObjC
+  - SDWebImage
+  - TZImagePickerController
+  - ZYQAssetPickerController (~> 1.3.1)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - BRPickerView
+    - GoogleMaps
+    - IQKeyboardManager
+    - JZLocationConverter
     - Masonry
+    - MBProgressHUD
     - MJExtension
-    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - TZImagePickerController
+    - ZYQAssetPickerController
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  BRPickerView: 6eb731d84385cc99c3ab4fec49af3336ed26c803
+  GoogleMaps: 0608099d4870cac8754bdba9b6953db543432438
+  IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
+  JZLocationConverter: 3d816bee6484aed9c155a6045a02ce444833e2f0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: e97d164cb411aa9795cf576093a1fa208b4a8dd8
-  MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SDWebImage: f84b0feeb08d2d11e6a9b843cb06d75ebf5b8868
+  TZImagePickerController: d084a7b97c82d387e7669dd86dc9a9057500aacf
+  ZYQAssetPickerController: 7581fb86b96b89a69bf363dfe5128a7c5486b790
 
-PODFILE CHECKSUM: 548950a6e662dbf8143a71dcb5aba23df64a0179
+PODFILE CHECKSUM: 0589b329acc443a97f22cb924e363135a6709f52
 
 COCOAPODS: 1.16.2

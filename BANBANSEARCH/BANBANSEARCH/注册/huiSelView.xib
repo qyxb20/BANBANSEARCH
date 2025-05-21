@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="huiSelView">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQf-w9-Ujx">
+                    <rect key="frame" x="205" y="0.0" width="166" height="98"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="并集" translatesAutoresizingMaskIntoConstraints="NO" id="PMz-ym-9Ha">
+                            <rect key="frame" x="0.0" y="0.0" width="166" height="98"/>
+                        </imageView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fDh-dP-Xs5">
+                            <rect key="frame" x="15" y="15" width="136" height="68"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="fDh-dP-Xs5" secondAttribute="trailing" constant="15" id="N5z-h0-x1S"/>
+                        <constraint firstItem="fDh-dP-Xs5" firstAttribute="leading" secondItem="mQf-w9-Ujx" secondAttribute="leading" constant="15" id="NKL-af-3pi"/>
+                        <constraint firstAttribute="bottom" secondItem="PMz-ym-9Ha" secondAttribute="bottom" id="NWa-Fo-xC7"/>
+                        <constraint firstAttribute="height" constant="98" id="OMQ-2X-UZJ"/>
+                        <constraint firstItem="PMz-ym-9Ha" firstAttribute="top" secondItem="mQf-w9-Ujx" secondAttribute="top" id="Xy4-qK-d5g"/>
+                        <constraint firstAttribute="width" constant="166" id="YAO-8H-taN"/>
+                        <constraint firstAttribute="trailing" secondItem="PMz-ym-9Ha" secondAttribute="trailing" id="k9l-sT-OSj"/>
+                        <constraint firstItem="PMz-ym-9Ha" firstAttribute="leading" secondItem="mQf-w9-Ujx" secondAttribute="leading" id="ngg-1B-KOc"/>
+                        <constraint firstItem="fDh-dP-Xs5" firstAttribute="top" secondItem="mQf-w9-Ujx" secondAttribute="top" constant="15" id="pP2-9F-9e7"/>
+                        <constraint firstAttribute="bottom" secondItem="fDh-dP-Xs5" secondAttribute="bottom" constant="15" id="qCg-pT-uJg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mQf-w9-Ujx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CiW-rA-WNV"/>
+                <constraint firstAttribute="trailing" secondItem="mQf-w9-Ujx" secondAttribute="trailing" constant="22" id="S53-fr-ROq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="fDh-dP-Xs5" id="3eV-qL-mFw"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="并集" width="174.5" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

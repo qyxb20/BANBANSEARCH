@@ -1,0 +1,19 @@
+{
+    "data":{
+        "name":"山田 太郎",
+        "phone":"090-1234-5678",
+        "email":"test@test.com",
+        "huiName":"神戸ベイサイド",
+        "shopName":"えん藤",
+        "type":"串揚げ",
+        "add":"大阪府大阪市XX区XX町X-X-X... ",
+        "danName":"山田 太郎",
+        "shopPhone":"070-1234-5678",
+        "startTime":"17:00",
+        "endTime":"23:00",
+        "xiu":"月曜",
+        "xiNum":"18席",
+        "shopUrl":"kushiage-endou.com",
+        "remark":"test Data"
+      }
+}

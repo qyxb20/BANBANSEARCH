@@ -1,0 +1,6 @@
+module Pods_BANBANSEARCH {
+  umbrella header "Pods-BANBANSEARCH-umbrella.h"
+
+  export *
+  module * { export * }
+}

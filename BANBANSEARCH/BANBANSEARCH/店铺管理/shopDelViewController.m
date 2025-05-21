@@ -1,0 +1,101 @@
+//
+//  shopDelViewController.m
+//  BANBANSEARCH
+//
+//  Created by apple on 2025/5/8.
+//
+
+#import "shopDelViewController.h"
+
+@interface shopDelViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *choseBtn;
+@property (weak, nonatomic) IBOutlet UILabel *agreeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+
+@end
+
+@implementation shopDelViewController
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"矩形 1"] forBarMetrics:UIBarMetricsDefault];
+    
+}
+-(void)returnClick{
+    [self.navigationController popViewControllerAnimated:NO];
+}
+- (void)initData{
+    UIView *leftButtonView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 25, 17)];
+    UIButton *returnBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 25, 17)];
+       [leftButtonView addSubview:returnBtn];
+       [returnBtn setImage:[UIImage imageNamed:@"returnfanhuizuo"] forState:UIControlStateNormal];
+       [returnBtn addTarget:self action:@selector(returnClick) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *leftCunstomButtonView = [[UIBarButtonItem alloc] initWithCustomView:leftButtonView];
+      self.navigationItem.leftBarButtonItem = leftCunstomButtonView;
+   
+    self.title = @"店舗削除";
+   
+
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self initData];
+    self.view.backgroundColor = [UIColor colorWithRed:239 / 255.0 green:239 / 255.0 blue:239 / 255.0 alpha:1];
+    @weakify(self);
+    [self.agreeLabel addTapAction:^(UIView * _Nonnull view) {
+        @strongify(self);
+        if (!self.choseBtn.selected) {
+            self.choseBtn.selected = YES;
+        }
+        else{
+            self.choseBtn.selected = NO;
+        }
+    }];
+    self.contentLabel.text = @"１．ご利用中の店舗にサブスクリプションが紐づいている場合は、削除する前に必ずキャンセルまたは解約のお手続きをお願いいたします。\n・iOS：[設定] > [サブスクリプション管理]\n・Android：[Google Play ストア] > [アカウント] > [サブスクリプション管理]\n２．キャンセルまたは解約のお手続きが完了していない場合、店舗を削除することはできません。\n３．なお、同じ店舗または別の店舗を再度登録する場合は、現在のサブスクリプション期間が終了した後に登録可能となります。";
+    // Do any additional setup after loading the view from its nib.
+    
+}
+- (IBAction)choseClick:(UIButton *)sender {
+    if (!sender.selected) {
+        sender.selected = YES;
+    }else{
+        sender.selected = NO;
+    }
+}
+- (IBAction)deleBtnClick:(UIButton *)sender {
+    if (!self.choseBtn.selected) {
+        ToastShow(@"店舗削除に同意するチェックボックスを確認してください。",@"矢量 20",RGB(0xFD9329));
+        return;
+    }
+    CSQAlertView *alert = [[CSQAlertView alloc] initWithTitle:@"" Message:@"店舗を削除しますか？" btnTitle:@"確定" cancelBtnTitle:@"キャンセル" btnClick:^{
+        
+        [self deleUser];
+    } cancelBlock:^{
+
+    }];
+    [alert show];
+}
+-(void)deleUser{
+    [NetwortTool deleteByShopIdWithParm:@{@"shopId":self.dic[@"shopId"]} Success:^(id  _Nonnull responseObject) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"uploadShopInfo" object:nil];
+            ToastShow(@"店舗を削除しました。", @"chenggong",RGB(0x5EC907));
+         
+            [self returnClick];
+        });
+    } failure:^(NSError * _Nonnull error) {
+        ToastShow(error.userInfo[@"httpError"],@"矢量 20",RGB(0xFD9329));
+    }];
+    
+}
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
