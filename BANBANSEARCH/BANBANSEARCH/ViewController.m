@@ -706,9 +706,9 @@ static NSString *const kMapStyle = @"JSON_STYLE_GOES_HERE";
                     }
                     if (arr.count >= 2) {
                         
-                        CGFloat a = [Tool getLabelWidthWithText:arr[0][@"venuesName"] height:20 custonfont:[UIFont boldSystemFontOfSize:15]];
-                        CGFloat b = [Tool getLabelWidthWithText:arr[1][@"venuesName"] height:20 custonfont:[UIFont boldSystemFontOfSize:15]];
-                        CGFloat c = [Tool getLabelWidthWithText:@"..." height:20 custonfont:[UIFont boldSystemFontOfSize:15]];
+                        CGFloat a = [Tool getLabelWidthWithText:arr[0][@"venuesName"] height:20 custonfont:[UIFont boldSystemFontOfSize:15]] + 10;
+                        CGFloat b = [Tool getLabelWidthWithText:arr[1][@"venuesName"] height:20 custonfont:[UIFont boldSystemFontOfSize:15]] + 10;
+                        CGFloat c = [Tool getLabelWidthWithText:@"..." height:20 custonfont:[UIFont boldSystemFontOfSize:15]] + 10;
                         
                          w = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
 
@@ -751,6 +751,22 @@ static NSString *const kMapStyle = @"JSON_STYLE_GOES_HERE";
                             }else{
                                 markView.title.text =arr[0][@"venuesName"];
                             }
+                            markView.shopName.text =@"";
+                        }
+                       else if (arr.count == 2) {
+//                            markView.title.text =arr[0][@"venuesName"];
+                           if ([arr[0][@"venuesName"] length] > 10) {
+                               markView.huiName.text = [NSString stringWithFormat:@"%@...",[arr[0][@"venuesName"] substringToIndex:10]];
+                               
+                           }else{
+                               markView.huiName.text =arr[0][@"venuesName"];
+                           }
+                           if ([arr[1][@"venuesName"] length] > 10) {
+                               markView.title.text = [NSString stringWithFormat:@"%@...",[arr[1][@"venuesName"] substringToIndex:10]];
+                               
+                           }else{
+                               markView.title.text =arr[1][@"venuesName"];
+                           }
                             markView.shopName.text =@"";
                         }
                         else{

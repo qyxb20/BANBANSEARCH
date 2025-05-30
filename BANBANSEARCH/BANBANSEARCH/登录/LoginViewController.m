@@ -221,8 +221,15 @@
         ToastShow(@"認証コードを入力してください。",@"矢量 20",RGB(0xFD9329));
         return;
     }
-    
-//    
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", EMAILSTR];
+    BOOL emailValid = [emailTest evaluateWithObject:self.userTF.text];
+
+    if (!emailValid) {
+     
+        ToastShow(@"正しい形式でメールアドレスを入力してください。", @"矢量 20",RGB(0xFF830F));
+        return;
+    }
+//
     if (!self.choseBtn.selected) {
 //        ToastShow(@"请勾选协议",@"矢量 20",RGB(0xFD9329));
 //        return;
@@ -257,9 +264,9 @@
 }
 ///登录
 -(void)login{
-    NSString *uuidStr =  [UIDevice currentDevice].identifierForVendor.UUIDString;
+    NSString *uuidStr = [NSString getUUID];
     NSDictionary *parm = @{@"userName":self.userTF.text,@"verificationCode":self.passTF.text,@"loginUuid": uuidStr};
-    
+    NSLog(@"uuidStr:%@",uuidStr);
     [NetwortTool loginWithCode:parm Success:^(id  _Nonnull responseObject) {
 //        account.userInfo.accessToken = responseObject[@"accessToken"];
         account.userInfo = [UserInfoModel mj_objectWithKeyValues:responseObject];
@@ -268,6 +275,8 @@
         ToastShow(error.userInfo[@"httpError"],@"矢量 20",RGB(0xFF830F));
     }];
 }
+//BB824B7A-AC14-434A-B854-DAAFB8B6393B
+
 /*
 #pragma mark - Navigation
 

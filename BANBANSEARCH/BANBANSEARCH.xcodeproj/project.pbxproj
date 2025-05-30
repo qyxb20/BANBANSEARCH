@@ -303,9 +303,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BANBANSEARCH/Pods-BANBANSEARCH-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BANBANSEARCH/Pods-BANBANSEARCH-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -370,10 +374,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BANBANSEARCH/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "BANBANサーチ";
-				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリは、カメラへのアクセスを要求しています。アクセスを許可すると、撮影した写真を簡単にアップロードできます。";
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラへのアクセスを許可しますか？\n「BANBANサーチ」アプリでは、撮影した写真を店舗情報として地図上に表示するため、カメラへのアクセスをお願いしています。\nご許可いただくことで、その場で撮影し、簡単に写真をアップロードできます。";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "位置情報のアクセスを許可すると、あなたに近い店舗や会場の情報を表示できます。";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報のアクセスを許可すると、あなたに近い店舗や会場の情報を表示できます。";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "このアプリは、写真へのアクセスを要求しています。アクセスを許可すると、写真を簡単にアップロードできます。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "写真へのアクセスを許可しますか？\n「BANBANサーチ」アプリでは、端末内の写真を選択し、店舗情報としてアップロードするために、写真へのアクセス許可が必要です。\nご許可いただくことで、お気に入りの写真を簡単にアップロードできます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -385,7 +389,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.BANBANSEARCH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -415,10 +419,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BANBANSEARCH/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "BANBANサーチ";
-				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリは、カメラへのアクセスを要求しています。アクセスを許可すると、撮影した写真を簡単にアップロードできます。";
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラへのアクセスを許可しますか？\n「BANBANサーチ」アプリでは、撮影した写真を店舗情報として地図上に表示するため、カメラへのアクセスをお願いしています。\nご許可いただくことで、その場で撮影し、簡単に写真をアップロードできます。";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "位置情報のアクセスを許可すると、あなたに近い店舗や会場の情報を表示できます。";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報のアクセスを許可すると、あなたに近い店舗や会場の情報を表示できます。";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "このアプリは、写真へのアクセスを要求しています。アクセスを許可すると、写真を簡単にアップロードできます。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "写真へのアクセスを許可しますか？\n「BANBANサーチ」アプリでは、端末内の写真を選択し、店舗情報としてアップロードするために、写真へのアクセス許可が必要です。\nご許可いただくことで、お気に入りの写真を簡単にアップロードできます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -430,7 +434,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.BANBANSEARCH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

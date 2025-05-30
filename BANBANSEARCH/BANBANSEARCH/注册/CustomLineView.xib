@@ -41,14 +41,14 @@
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="push"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNv-Qr-BBM">
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNv-Qr-BBM">
                             <rect key="frame" x="290" y="22" width="67" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="67" id="lHW-tg-168"/>
                                 <constraint firstAttribute="height" constant="48" id="ut7-eJ-zTG"/>
                             </constraints>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" image="矩形 12"/>
+                            <state key="normal" backgroundImage="矩形 12"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="3"/>
@@ -94,6 +94,7 @@
             <connections>
                 <outlet property="isBi" destination="8Pz-hy-aGH" id="fNO-Pu-ZWF"/>
                 <outlet property="picBtn" destination="JNv-Qr-BBM" id="Fif-Ka-IcX"/>
+                <outlet property="picW" destination="lHW-tg-168" id="249-Mc-tJc"/>
                 <outlet property="search" destination="lZD-hu-rXb" id="z6E-yp-FVN"/>
                 <outlet property="searchWidth" destination="JxS-Vp-MEs" id="aEQ-YB-284"/>
                 <outlet property="titleLabel" destination="SER-jT-RtV" id="Mvk-dI-cwo"/>

@@ -106,7 +106,7 @@
     // **********************************************
     // * Configure navigation item
     // **********************************************
-    self.navigationItem.title = @"画像をクリップする";
+    self.navigationItem.title = @"写真を選択";
     UIBarButtonItem *okButton = [[UIBarButtonItem alloc] initWithTitle:@"完了" style:UIBarButtonItemStyleBordered target:self action:@selector(handleDoneButton)];
     [self.navigationItem setRightBarButtonItem:okButton animated:NO];
     
@@ -262,10 +262,8 @@ UIImage* imageFromView(UIImage* srcImage, CGRect* rect) {
 }
 
 - (void)handleSingleTap:(UIGestureRecognizer *)gestureRecognizer {
-    // **********************************************
-    // * Single tap shows rotation menu
-    // **********************************************
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:(id)self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Rotate Clockwise", @"Rotate Counterclockwise", nil];
+   
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:(id)self cancelButtonTitle:@"キャンセル" destructiveButtonTitle:nil otherButtonTitles:@"右に回転", @"左に回転", nil];
     actionSheet.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
     actionSheet.alpha=0.90;
     actionSheet.tag = 1;

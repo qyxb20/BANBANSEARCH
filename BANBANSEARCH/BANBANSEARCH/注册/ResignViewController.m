@@ -256,9 +256,11 @@
         self.noteTX.text = [NSString isNullStr:self.dataDic[@"notes"]];
         
         self.danPicUrlStr = [NSString isNullStr:self.dataDic[@"storePhoto"]];
-        [self.UserPic.picBtn sd_setImageWithURL:[NSURL URLWithString:self.danPicUrlStr] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"矩形 10"]];
+       
+        [self.UserPic.picBtn sd_setBackgroundImageWithURL:[NSURL URLWithString:self.danPicUrlStr] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"矩形 10"]];
         self.xieZhenPicUrlStr = [NSString isNullStr:self.dataDic[@"shopImage"]];
-        [self.Pic.picBtn sd_setImageWithURL:[NSURL URLWithString:self.xieZhenPicUrlStr] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"矩形 10"]];
+        [self.Pic.picBtn.imageView setContentMode:UIViewContentModeScaleAspectFit];
+        [self.Pic.picBtn sd_setBackgroundImageWithURL:[NSURL URLWithString:self.xieZhenPicUrlStr] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"矩形 10"]];
         self.venues_id = [NSString stringWithFormat:@"%@",self.dataDic[@"venuesId"]];
         [self.NameFView updateData];
         [self.phoneTFView updateData];
@@ -429,11 +431,15 @@
     }
     
     NSString *add =[NSString stringWithFormat:@"%@%@%@%@%@",Province,City,Area,self.addDetailView.customTF.text,self.ShopNameView.customTF.text];
-//    lat = "43.1658742";
-//    lng = "141.414538";
+//    NSString *add =[NSString stringWithFormat:@"%@%@%@%@",Province,City,Area,self.addDetailView.customTF.text];
+
     [HudView showHudForView:self.view];
     [NetwortTool getLatAndLngWithParm:@{@"ShopName":add} Success:^(id  _Nonnull responseObject) {
         NSDictionary *dic = responseObject;
+//        lat = "34.693466";
+//        lng = "135.192281";
+//        shopLat = "35.8774804";
+//        shopLng = "139.8229168";
 //        self->tempLocation = CLLocationCoordinate2DMake([dic[@"lat"] floatValue], [dic[@"lng"] floatValue]);
         [self sureClick:dic];
     } failure:^(NSError * _Nonnull error) {
@@ -682,12 +688,15 @@
             ToastShow(@"画像アップロードが完了しました。", @"chenggong", RGB(0x5EC907));
             if (tg == 1) {
                 self.danPicUrlStr = responseObject[@"data"];
-                [self.UserPic.picBtn setImage:image forState:UIControlStateNormal];
+//                [self.UserPic.picBtn.imageView setContentMode:UIViewContentModeScaleAspectFit];
+//                [self.UserPic.picBtn setContentMode:UIViewContentModeScaleAspectFit];
+                [self.UserPic.picBtn setBackgroundImage:image forState:UIControlStateNormal];
                 
             }
             else{
                 self.xieZhenPicUrlStr = responseObject[@"data"];
-                [self.Pic.picBtn setImage:image forState:UIControlStateNormal];
+//                [self.Pic.picBtn.imageView setContentMode:UIViewContentModeScaleAspectFit];
+                [self.Pic.picBtn setBackgroundImage:image forState:UIControlStateNormal];
             }
            
         });
@@ -722,12 +731,14 @@
                 ToastShow(@"画像アップロードが完了しました。", @"chenggong", RGB(0x5EC907));
                 if (tg == 1) {
                     self.danPicUrlStr = responseObject[@"data"];
-                    [self.UserPic.picBtn setImage:image forState:UIControlStateNormal];
+//                    [self.UserPic.picBtn.imageView setContentMode:UIViewContentModeScaleAspectFit];
+                    [self.UserPic.picBtn setBackgroundImage:image forState:UIControlStateNormal];
                     
                 }
                 else{
                     self.xieZhenPicUrlStr = responseObject[@"data"];
-                    [self.Pic.picBtn setImage:image forState:UIControlStateNormal];
+                  
+                    [self.Pic.picBtn setBackgroundImage:image forState:UIControlStateNormal];
                 }
                
             });
@@ -1029,6 +1040,7 @@
         _UserPic.titleLabel.text =@"担当者写真";
         _UserPic.searchWidth.constant = 22;
         _UserPic.isBi.text = @"";
+        _UserPic.picW.constant = 48;
         
     }
     return _UserPic;

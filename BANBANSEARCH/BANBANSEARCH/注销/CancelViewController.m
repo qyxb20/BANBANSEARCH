@@ -68,7 +68,7 @@
         UILabel *labe = [[UILabel alloc] initWithFrame:CGRectMake(WIDTH - 72 - 100, 0, 100, 44)];
         labe.textAlignment = NSTextAlignmentRight;
         labe.font = [UIFont systemFontOfSize:12];
-        labe.text = @"1.0.0";
+        labe.text = @"1.0.1";
         [cell.contentView addSubview:labe];
     }
     

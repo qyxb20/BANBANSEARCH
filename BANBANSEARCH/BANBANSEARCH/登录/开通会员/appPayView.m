@@ -184,7 +184,7 @@
     [self.delegate applePayHUD:self.OrderNo res:encodeStr];
 //    [self.delegate applePaySuccess];
     
-    [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
+    [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
     
 
 }

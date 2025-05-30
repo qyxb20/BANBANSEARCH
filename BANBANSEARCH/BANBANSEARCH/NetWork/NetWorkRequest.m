@@ -9,8 +9,8 @@
 NSString *kHttpErrorReason = @"httpError";
 NSString * const RequestServerDomain = @"https://banbansearch.net";
 NSString * const RequestH5Domain = @"https://banbansearch.net";
-//NSString * const RequestServerDomain = @"https://api.netneto.jp";
-//NSString * const RequestH5Domain = @"https://api.netneto.jp";
+//NSString * const RequestServerDomain = @"http://133.242.131.84:8086";
+//NSString * const RequestH5Domain = @"http://133.242.131.84:8086";
 //NSString * const RequestServerDomain = @"http://192.168.1.122:8086";
 //NSString * const RequestH5Domain = @"http://192.168.1.122:8086";
 

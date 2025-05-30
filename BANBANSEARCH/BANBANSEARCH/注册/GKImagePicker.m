@@ -99,7 +99,7 @@
 
 - (void)showCameraImagePicker {
 #if TARGET_IPHONE_SIMULATOR
-    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Simulator" message:@"Camera not available." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"シミュレーター" message:@"カメラは利用できません." delegate:nil cancelButtonTitle:@"確定" otherButtonTitles:nil];
     [alert show];
 #elif TARGET_OS_IPHONE
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];

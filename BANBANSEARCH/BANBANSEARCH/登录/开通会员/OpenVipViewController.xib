@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xke-GJ-FZq">
-                    <rect key="frame" x="24" y="312" width="345" height="48"/>
+                    <rect key="frame" x="24" y="332" width="345" height="48"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="VMh-pV-biS"/>
                         <constraint firstAttribute="width" constant="345" id="mYG-fM-Qtr"/>
@@ -78,8 +78,8 @@
                                 <action selector="agreeClick:" destination="-1" eventType="touchUpInside" id="Dq6-hW-6WQ"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月額サブスクリプション（自動更新）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrF-Zj-UKA">
-                            <rect key="frame" x="28" y="70" width="129.66666666666666" height="12"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自動更新月額プラン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrF-Zj-UKA">
+                            <rect key="frame" x="28" y="70" width="72" height="12"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="12" id="aLa-oG-Lh8"/>
                             </constraints>
@@ -109,14 +109,79 @@
                         <constraint firstAttribute="trailing" secondItem="EhH-Ns-BRx" secondAttribute="trailing" constant="10" id="yQE-lg-wHW"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月額550円で自動的に更新されます。キャンセルはいつでも可能です。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTF-qR-bZC">
+                    <rect key="frame" x="22" y="310" width="349" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.65111321209999995" green="0.65111321209999995" blue="0.65111321209999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVg-d0-8N0">
+                    <rect key="frame" x="22" y="385" width="349" height="12"/>
+                    <string key="text">*お支払い前に、定期課金に関するご案内を必ずお読みください。
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.67530757190000001" green="0.1650062799" blue="0.1882071793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【定期課金に関するご案内】" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="730-8y-Jdo">
+                    <rect key="frame" x="22" y="514.66666666666663" width="349" height="15.666666666666629"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <color key="textColor" red="0.65111321209999995" green="0.65111321209999995" blue="0.65111321209999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7I-l1-rBk">
+                    <rect key="frame" x="22" y="532.33333333333337" width="349" height="118.33333333333337"/>
+                    <string key="text">１．お支払いは、お客様のApple IDアカウントに請求されます。
+２．購入後すぐにサブスクリプションの料金が課金されます。
+３．サブスクリプションは期間終了の24時間前までにキャンセルされない限り、自動的に更新されます。
+４．自動更新の設定は、App Storeの「設定」＞「Apple ID」からいつでも停止・変更が可能です。
+５．サブスクリプションの解約は、アプリ内では行えません。必ずApp Storeの「サブスクリプション管理」から操作してください。
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.65111321209999995" green="0.65111321209999995" blue="0.65111321209999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【BANBANサーチ 会員特典】" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7h-EH-pO7">
+                    <rect key="frame" x="22" y="417" width="349" height="16"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <color key="textColor" red="0.65111321209999995" green="0.65111321209999995" blue="0.65111321209999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOF-yv-Ood">
+                    <rect key="frame" x="22" y="435" width="349" height="65.666666666666686"/>
+                    <string key="text">・全国の店舗・施設情報を登録・検索いただけます。
+・会員登録をしていただくと、店舗情報の掲載やエリア検索、地図・電話連携の機能をご利用いただけます。
+・地域に特化した情報の発信が可能で、地元の皆さまや観光客の方々への認知度向上にお役立ていただけます。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.65111321209999995" green="0.65111321209999995" blue="0.65111321209999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LTF-qR-bZC" secondAttribute="trailing" constant="22" id="4qk-8u-1S7"/>
+                <constraint firstItem="LTF-qR-bZC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="22" id="5GD-gy-uwn"/>
+                <constraint firstItem="Xke-GJ-FZq" firstAttribute="top" secondItem="LTF-qR-bZC" secondAttribute="bottom" constant="10" id="6gK-OR-cfX"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="mVg-d0-8N0" secondAttribute="trailing" constant="22" id="AsZ-KZ-BZr"/>
                 <constraint firstItem="R5U-00-bWp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IX0-I6-jlV"/>
-                <constraint firstItem="Xke-GJ-FZq" firstAttribute="top" secondItem="R5U-00-bWp" secondAttribute="bottom" constant="32" id="WX0-qg-H3t"/>
+                <constraint firstItem="730-8y-Jdo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="22" id="Lo3-qW-VCr"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="e7I-l1-rBk" secondAttribute="trailing" constant="22" id="RyF-Jf-Icd"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Y7h-EH-pO7" secondAttribute="trailing" constant="22" id="U4D-d7-tiS"/>
+                <constraint firstItem="Y7h-EH-pO7" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="22" id="VUV-ac-wvt"/>
+                <constraint firstItem="Xke-GJ-FZq" firstAttribute="top" secondItem="R5U-00-bWp" secondAttribute="bottom" constant="52" id="WX0-qg-H3t"/>
                 <constraint firstItem="R5U-00-bWp" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="32" id="XWk-Fm-Kez"/>
+                <constraint firstItem="e7I-l1-rBk" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="22" id="YqG-l1-Qrt"/>
+                <constraint firstItem="mVg-d0-8N0" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="22" id="Z2B-q5-Y7H"/>
+                <constraint firstItem="KOF-yv-Ood" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="22" id="aGe-XH-B1G"/>
+                <constraint firstItem="Y7h-EH-pO7" firstAttribute="top" secondItem="mVg-d0-8N0" secondAttribute="bottom" constant="20" id="dIW-8D-dkg"/>
+                <constraint firstItem="730-8y-Jdo" firstAttribute="top" secondItem="KOF-yv-Ood" secondAttribute="bottom" constant="14" id="db0-NA-QHv"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="KOF-yv-Ood" secondAttribute="trailing" constant="22" id="eSW-0k-QLQ"/>
+                <constraint firstItem="KOF-yv-Ood" firstAttribute="top" secondItem="Y7h-EH-pO7" secondAttribute="bottom" constant="2" id="gTx-jv-pdE"/>
+                <constraint firstItem="mVg-d0-8N0" firstAttribute="top" secondItem="Xke-GJ-FZq" secondAttribute="bottom" constant="5" id="nda-k1-9Ic"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="730-8y-Jdo" secondAttribute="trailing" constant="22" id="oaK-zE-S66"/>
                 <constraint firstItem="Xke-GJ-FZq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qta-jR-uBC"/>
+                <constraint firstItem="e7I-l1-rBk" firstAttribute="top" secondItem="730-8y-Jdo" secondAttribute="bottom" constant="2" id="rQg-wW-QSU"/>
             </constraints>
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
